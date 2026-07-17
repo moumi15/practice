@@ -4,6 +4,9 @@
 #movies=[a,b,c]
 #print(movies)
 
+
+# this is a practice 
+
 """movies=[]
 movies.append(input("enter 1st movie name:"))
 movies.append(input("enter 2nd movie name:"))
