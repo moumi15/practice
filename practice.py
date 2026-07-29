@@ -173,17 +173,94 @@ find_fact(5)"""
 converter_inr(2)"""
 
 
-class student:
-    def __init__(self,name,marks):
-        self.name= name
-        self.marks = marks
+#class student:
+    #def __init__(self,name,marks):
+        #self.name= name
+        #self.marks = marks
 
-    def get_avg(self):
-        sum = 0
-        for i in self.marks:
-            sum += i
-        print("hi",self.name,"your avg marks is",sum/3)   
+    #def get_avg(self):
+        #sum = 0
+        #for i in self.marks:
+           # sum += i
+       # print("hi",self.name,"your avg marks is",sum/3)   
 
-s1 = student("moumi",[99,98,97])
-s1.get_avg()             
+#s1 = student("moumi",[99,98,97])
+#s1.get_avg()
+
+#banking system
+"""class Account:
+    def __init__(self,bal,acc):
+        self.balance=bal
+        self.account=acc
+
+    
+    def debit(self,amount):
+        self.balance -= amount
+        print("rs", amount , "is debited from your account")
+        print("the total amount is ", self.get_balance())
+
+    def credit(self,amount):
+        self.balance += amount
+        print("rs", amount , "is credited from your account")
+        print("the total amount is ", self.get_balance()) 
+
+    def get_balance(self):
+        return self.balance       
+
+acc1=Account(10000,12345)
+acc1.debit(1000)
+acc1.credit(2000)"""
+
+#finding area and perimeter of a circle using oops
+"""class Circle:
+    def __init__(self,radius):
+        self.radius=radius
+
+    def area(self):
+        return (22/7)*self.radius**2
+    
+    def perimeter(self):
+        return 2*(22/7)*self.radius
+    
+
+cir1=Circle(14)
+print(cir1.area())
+print(cir1.perimeter())"""
+
+#inheritance
+"""class Employee:
+    def __init__(self,role,dept,salary):
+        self.role=role
+        self.dept=dept
+        self.salary=salary
+
+    def showdetails(self):
+        print("role =", self.role)
+        print("dept =", self.dept)
+        print("Salary =", self.salary)
+
+class engineer(Employee):
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        super().__init__("engineer","IT",75000)
+
+emp1=engineer("moumi",23)
+emp1.showdetails()"""
+
+#using a dundur function __gt__()
+class Order:
+    def __init__(self,item,price):
+        self.item=item
+        self.price=price
+
+    def __gt__(self,ord2):
+        return self.price > ord2.price
+
+
+ord1=Order("brownie",150)
+ord2=Order("cake",70)   
+
+print(ord1>ord2)
+        
 
