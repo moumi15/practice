@@ -1,11 +1,11 @@
-#GUESS THE TARGET NO. (TARGET NO IS 36)
+#GUESS THE TARGET N0.
 
 import random
 
 target = random.randint(1,100)
 
 while True:
-    userchoice = int(input("guess the target"))
+    userchoice = int(input("guess the target : "))
     if(userchoice == target):
         print("yehhhhh..its a correct guess")
         break
