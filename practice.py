@@ -305,7 +305,7 @@ emp1.showdetails()"""
 
 #using a dunder function __gt__()
 
-class Order:
+"""class Order:
     def __init__(self,item,price):
         self.item=item
         self.price=price
@@ -317,6 +317,58 @@ class Order:
 ord1=Order("brownie",150)
 ord2=Order("cake",70)   
 
-print(ord1>ord2)
+print(ord1>ord2)"""
         
+#REVERSE A STRING WITHOUT USING SLICING
 
+"""a= input("enter a name : ")
+reverse =""
+for i in a:
+    reverse = i + reverse
+
+print("your reverse name is : ", reverse)"""    
+
+#REVERSE A STRING USING SLICING METHOD
+
+"""a= input("enter a name : ")
+print(a[::-1])"""
+
+#COUNT THE NO OF VOWELS IN A STRING
+
+"""a= input("enter a name : ")
+count = 0
+for i in a:
+    if i in "aeiouAEIOU":
+        count += 1
+
+print("no. of vowels is :",count)"""   
+
+#FIND THE LARGEST NO IN A LIST WITHOUT USING max()
+
+"""list = [12,45,67,88,93,34,6]
+largest = list[0]
+for i in list:
+   if i>largest:
+    largest=i
+
+print("the largest no is: ", largest)""" 
+
+#FIND THE LARGEST NO IN A LIST USING max()
+
+"""list = [12,45,67,88,93,34,6]
+largest = max(list)
+print("the largest no is: ", largest)"""
+
+#COUNT THE FREQUENCY OF EACH WORD
+
+a= input("enter a sentence : ")
+words = a.split()
+frequency = {}
+for i in words:
+    if i in frequency:
+        frequency[i] += 1
+    else:
+        frequency[i] = 1  
+
+for i in frequency:
+    print(i,":",frequency[i])          
